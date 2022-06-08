@@ -1,0 +1,93 @@
+@media screen and (max-width:400px) {
+  details > summary{
+    font-size: 1rem !important;
+  }
+  .prixmenu{
+    font-size: 0.75rem !important;
+  }
+  .plats details{
+    font-size: 0.75rem !important;
+  }
+  .platfloat{
+    width: 150px!important;
+
+    margin-right: 30px!important;
+    margin-bottom: 20px!important;
+  }
+}
+.plats details{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+#summary,#summaryc{
+
+  display: block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  font-family: Arial;
+
+}
+#summaryc{
+  color:rgb(133, 19, 190);
+}
+.summarywithnum::before{
+
+  counter-increment: platlist;
+  content: "MENU  " counter(platlist) " →  ";
+}
+.summarywithnum::before{
+  color: rgb(108, 0, 130);
+}
+
+.sombre{
+  opacity:0.2;
+}
+.content-summary{
+  margin: 0 2px;
+}
+main{
+  counter-reset: platlist;
+}
+details > summary::webkit-details-marker{
+display: none;
+}
+#summaryc:hover{
+
+  background-color: rgba(255,255,255,0.2);
+}
+
+.prixmenu{
+  color: black;
+  float: right;
+  font-size: 1rem;
+  margin: auto 0;
+}
+details > p {
+
+}
+.platfloat{
+  float: left;
+  width: 200px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  transition: transform ease-in-out 1s;
+}
+.platfloat:hover{
+  transform: scale(1.1,1.1) translateX(10px) translateY(10px);
+
+}
+.plats button{
+  font-size: 1rem;
+
+}
+hr{
+  clear: both;
+  color: white;
+}

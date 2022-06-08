@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: Georgia, serif; */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  text-align: justify;
+  text-align-last: left;
+
+  box-sizing: border-box;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+main{
+  background: transparent;
+  /* background: linear-gradient(15deg,rgba(188,188,188,0.1), rgb(207, 107, 25)); */
+  /* background: url(../images/ouvrir-un-restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+@media (orientation:landscape) , (min-width:600px) {
+  #summary,#summaryc{
+
+  }
+  .prixmenu{
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .retirer{
+    float:left;
+    margin: 0 1.3rem;
+  }
+  .boxquntprix{
+    
+  }
+}
+@media (max-width:600px) {
+  #summary,#summaryc{
+    display:flex;
+  }
+  .prixmenu{
+    width: 100%;
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .retirer{
+    float:left;
+    /* margin-right: 1.3rem; */
+  }
+}
+#boxquntprix{
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+}
+.quant{
+  height: 1.5rem;
+  /* height: 100%; */
+  width: 2.1rem;
+}
+
+.epuise{
+  margin-left: 20px;
+}
+
+
+#total{
+  /* margin-left: 1rem; */
+  text-decoration: underline;
+}
+.baspanier{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+#formpanier{
+  margin-top:3vh;
+
+}
+#panier{
+  /* background-color: rgba(2, 25, 25, 0.3); */
+  background-color: rgba(44, 16, 75, 0.3);
+
+}
+#historique{
+  background-color: rgba(44, 16, 75, 0.3);
+  color: white;
+}
+#titrepanier,#titrehistorique{
+  color: white;
+  background-color: black;
+  width: 100%;
+  display: inline-block;
+  text-align-last: center;
+}
+.invisible{
+  display: none;
+}
+.visible{
+  display:block;
+}
+.numerocommande{
+  /* display: block; */
+  margin-left: 2%;
+}
+.montant{
+  /* display: block; */
+  margin-top: 0.3rem;
+  /* margin-left: 3%; */
+}
+.numerocommande >span:nth-child(1),.montant >span:nth-child(1){
+  text-decoration: underline;
+}
+.box_commandes{
+
+  margin-left: 5%;
+}
+.box_commandes_item{
+
+  /* margin-left: 10%; */
+}
+.date_com{
+  text-decoration: none;
+  margin-left: 4rem;
+}
+/*
+@keyframes formu {
+  from{
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+} */

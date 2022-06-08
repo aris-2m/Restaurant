@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: Georgia, serif; */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  text-align: justify;
+  text-align-last: left;
+
+  box-sizing: border-box;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+main{
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  top: 70px;
+  background: url(https://2.bp.blogspot.com/-Bkj1ISsSoco/XLspVyw5fUI/AAAAAAAABPw/pwdhkZveAsobdRbgtDGqZcAOePcwhY4JwCLcBGAs/s1600/after-road-coignieres%2B%25285%2529.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
+}
+footer{
+  bottom: 0;
+}
+#formulaire2{
+
+display:flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+color:white;
+animation: formu 1s;
+--width: 100%;
+--widthfooter: 300px;
+
+/* height:calc(10% - 300px); */
+width: var(--width);
+left: calc(50% - var(--width)/2);
+top:30%;
+height: calc(100vh - 70px - 300px);
+min-height: 250px;
+z-index: 300;
+background-color: rgb(255, 255, 255,0.9);
+--bord:1.5px;
+border:var(--bord)  solid rgb(133, 19, 190,0.5);
+
+}
+#formcommande{
+  position: relative;
+  width: 100%;
+}
+#titrecommander{
+  position: relative;
+  /*
+  --widthnew: 120px;
+  width: var(--widthnew);
+   left: calc(var(--width)/2 - var(--widthnew)/2); */
+  margin: 0 auto;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(23,29,43,0.8);
+  font-family: Arial;
+  padding: 5px 5px;
+  text-align-last: center;
+}
+.elmtformu > label{
+  font-family: Arial;
+  float: left;
+  position: relative;
+  text-decoration: underline;
+  height: 22px;
+  margin-top: 3px;
+}
+.elmtformu{
+  margin: 15px 15px;
+  font-family: Arial;
+  position: relative;
+  height: 22px;
+}
+
+.elmtformu > .zones{
+  font-family: Arial;
+  float: right;
+  width:160px;
+  height: 21px;
+  margin-right: 0;
+  margin-left: 15px;
+}
+#zoneradio{
+  display: flex;
+  justify-content:space-around;
+}
+#zoneradio > div > label{
+  font-family: Arial;
+}
+#submit{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+#annuler{
+  text-decoration: none;
+  position: absolute;
+  float: right;
+  right: 0;
+}
+#annuler > a{
+  text-decoration: none;
+  float: right;
+}
+@keyframes formu {
+  from{
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#messagesubmit{
+  display: none;
+}
+
+/* input:required{
+  background: url(../icon/asterisk-orange-icon.png) 98% center no-repeat;
+  background-size: 10px 10px;
+}
+input:focus:invalid, textarea:focus:invalid{
+
+  background-image: none;
+}
+input:valid, textarea:valid{
+  background-image: none;
+  background:none;
+
+} */

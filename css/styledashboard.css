@@ -1,0 +1,118 @@
+*{
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: Georgia, serif; */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  text-align: justify;
+  text-align-last: left;
+
+  box-sizing: border-box;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+body{
+  background: url(./../images/pexels-aleksandar-pasaric-325185.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  /* background: rgb(110, 192, 227); */
+}
+main{
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+  /* margin-top: 12vh; */
+  margin-bottom: 10px;
+}
+@media screen and (orientation:landscape) and (min-width:1000px)
+{
+  main{
+    width: 40%;
+  }
+}
+@media screen and (max-width:450px) {
+
+  .elmtform > .cle{
+
+    font-size: 0.9rem !important;
+
+  }
+  .elmtform > .valeur{
+
+    font-size: 0.9rem !important;
+
+  }
+}
+
+.elmtform{
+  margin: 1rem 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  height: 21px;
+  max-height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.elmtform > .cle{
+  font-family: 'Poppins', sans-serif;
+  float: left;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  width: 30%;
+}
+.elmtform > .valeur{
+  /* font-family: Arial; */
+  font-family: 'sp';
+  font-size: 1.2rem;
+  float: right;
+  padding-right: 1rem;
+  width: 70%;
+  text-align-last: right;
+
+}
+
+#submit{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+#annuler{
+  text-decoration: none;
+  position: absolute;
+  float: right;
+  left: 1rem;
+}
+#annuler > a{
+  text-decoration: none;
+  float: left;
+}
+#deconnecter{
+  text-decoration: none;
+  position: absolute;
+  float: left;
+  right: 1rem;
+}
+#deconnecter > a{
+  text-decoration: none;
+
+}
+@keyframes formu {
+  from{
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#messagesubmit{
+  display: none;
+}

@@ -1,0 +1,113 @@
+
+#formulaire{
+
+display: none;
+align-items: center;
+justify-content: center;
+color:white;
+animation: formu 1s;
+position: fixed;
+--width: 300px;
+/* --width: 25%; */
+width: var(--width);
+left: calc(50% - var(--width)/2);
+top:35%;
+z-index: 300;
+background-color: rgb(255, 255, 255,0.9);
+--bord:1.5px;
+border:var(--bord)  solid rgb(133, 19, 190,0.5);
+
+}
+#titrecon{
+  position: relative;
+  --widthnew: 120px;
+  width: var(--widthnew);
+  left: calc(var(--width)/2 - var(--widthnew)/2);
+  top: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(23,29,43,0.8);
+  font-family: Arial;
+  padding: 5px 5px;
+  text-align-last: center;
+}
+.elmtform > label{
+  font-family: Arial;
+  float: left;
+  position: relative;
+  text-decoration: underline;
+  height: 22px;
+  margin-top: 3px;
+  color: black;
+}
+.elmtform > label::after{
+  content: ":";
+  /* text-decoration: initial ;
+  text-decoration-line: none !important unset; */
+  text-decoration: initial none !important;
+}
+/* .elmtform :not(label){
+  text-decoration: underline !important;
+} */
+
+.elmtform{
+  margin: 15px 15px;
+  font-family: Arial;
+  position: relative;
+  height: 22px;
+}
+.elmtform > .zones{
+  font-family: Arial;
+  float: right;
+  width:160px;
+  height: 21px;
+  margin-right: 0;
+  margin-left: 15px;
+}
+#incorrect{
+  font-size: 12px;
+  text-decoration: none;
+  font-family: Arial;
+  color: red;
+  text-align-last: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+
+}
+#submit{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-top: 5px;
+}
+#submit > div > a{
+  font-size: 10px;
+  text-decoration: none;
+  font-family: Arial;
+  color: red;
+}
+#submit > div > a:hover{
+  color: rgba(23,29,43);
+}
+#submit > div > a:active{
+  color: black;
+}
+
+form{
+  position: relative;
+}
+.close{
+  position: absolute;
+  height: 20px;
+  /* top: calc(-20px - 1.5px);
+  left: calc(var(--width) - 1.5px); */
+  top: -10px;
+  opacity: 0.82;
+  /* left: calc(var(--width) - calc(var(--bord) + 10px)); */
+  left: calc(var(--width) - 20px);
+}
+.close:hover{
+  opacity: 1;
+}

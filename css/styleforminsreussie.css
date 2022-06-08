@@ -1,0 +1,56 @@
+*{
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: Georgia, serif; */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  text-align: justify;
+  text-align-last: left;
+
+  box-sizing: border-box;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+main{
+  height: calc(100vh- 70px - 300px);
+
+  min-height: 250px;
+  background: url(https://2.bp.blogspot.com/-Bkj1ISsSoco/XLspVyw5fUI/AAAAAAAABPw/pwdhkZveAsobdRbgtDGqZcAOePcwhY4JwCLcBGAs/s1600/after-road-coignieres%2B%25285%2529.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
+}
+.bienvenue{
+  position: relative;
+  /* top:90px; */
+
+  padding: 10px 0;
+  margin: 20px 5%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: rgb(255, 255, 255,0.8);
+
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  text-align-last: center;
+  /* text-transform: uppercase; */
+  color:rgb(51, 2, 156,0.8); font-family:arial;
+}
+#bienvenue2{
+  margin: 5px 0;
+  padding: 0 0;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  text-align-last: center;
+  color:rgb(143, 71, 0) ;
+  font-family: 'Poppins', sans-serif;
+}
+#rouge{
+  color: red;
+}
